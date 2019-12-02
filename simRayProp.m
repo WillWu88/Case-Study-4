@@ -13,6 +13,6 @@
 function [y_out,theta_out] = simRayProp(M,y_in,theta_in)
     light_in = cat(1,y_in,theta_in);
     light_out = M * light_in;
-    y_out = light_out(1,:)
-    theta_out = light_out(2,:)
+    y_out = light_out(1,:);
+    theta_out = light_out(2,:);
 end
