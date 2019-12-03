@@ -44,6 +44,8 @@ for z = 1:length(z1Range)
     theoreticalZ2(z) = 1/((1/focalLength) - (1/z1Range(z)));
 end
 
+disp('haha');
+
 figure('Name','Z1 vs Z2 from 1mm to 1m, theo overlay');
 plot(z1Range,z2);
 axis([0,1000, -500, 500]);
