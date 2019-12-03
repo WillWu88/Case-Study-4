@@ -5,7 +5,7 @@ close all;
 
 % all units are in milimeters
 focalLength = 100;
-z1 = 45;
+z1 = 250;
 % assuming the lens is positioned at 0, has thickness of zero
 
 % testing model, at double focal lens using lens property
@@ -19,7 +19,7 @@ M = Mz2 * Mf * Mz1;
 % assumptions:
 % lens is 2mm tall, centered at 0
 rays_ypos = [1 1 1];
-rays_angle = [0 -1/z1 -(1/(z1-focalLength))];
+rays_angle = [0 atan(1/z1) 1/focalLength];
 
 [rays_out_ypos, rays_out_angle] = simRayProp(M,rays_ypos,rays_angle);
 
