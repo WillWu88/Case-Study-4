@@ -62,7 +62,7 @@ plot(z1Range,theoreticalZ2);
 legend('Real','Theoretical');
 xlabel('z1(mm)');
 ylabel('z2(mm)');
-title('Z2 vs Z1, Theoretical Overlay');
+title('Z2 vs Z1 from 1mm to 1m, heoretical overlay');
 hold off;
 
 
@@ -88,9 +88,8 @@ plot(z1Range,magCoeff);
 hold on;
 plot(z1Range,theoreticalmag);
 legend('Real','Theoretical');
-xlabel('m');
+xlabel('z1(mm)');
 ylabel('z2(mm)');
-title('m vs Z1, Theoretical Overlay');
 hold off;
 
 
